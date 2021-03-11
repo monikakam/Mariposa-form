@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mariposa-form</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="container">
+        <form id="form">
+            <h1>Więcej informacji?</h1>
+            <p>Jeśli interesuje Cię inwestycja w grunty o wysokim potencjale wzrostu wartości, wypełnij formularz, oddzwonimy do Ciebie.</p>       
+            
+            <input type="text" placeholder="Imię i nazwisko" required minlength="10" id="name" value="" pattern="^[a-zA-Z ]*$" title="Pole nie może zawierać cyfr i znaków specjalnych.">
+            <input type="email" placeholder="Wpisz Email" required id="mail">
+            <input type="text" pattern="[0-9]{9}" placeholder="Wpisz numer telefonu" required id="phone" title="Proszę wpisać nr telefonu w formacie 111222333">
+            <textarea placeholder ="Wpisz wiadomość" minlength="10" rows="3" required id="form-message" title="Pole powinno zawierać minimum 10 znaków."></textarea>
+            
+            <div class="wrap-bottom">
+                <input type="checkbox" name="regulations_acceptance" required id="rules">
+                <p>Akceptuję <span>Politykę Prywatności</span></p>
+            </div>
+            <button type="submit" value="check" id="btn">Wysyłam</button>
+        </form>
+        
+    </section>
+    <script src="js/script.js"></script>
+</body>
+</html>
