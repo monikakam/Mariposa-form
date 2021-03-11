@@ -26,7 +26,7 @@ form {
   text-align: center;
   max-width: 500px;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 h1 {
@@ -35,12 +35,6 @@ h1 {
 
 input {
   padding: 10px;
-  margin: 15px;
-  color: gray;
-  outline-color: white;
-}
-
-textarea {
   margin: 15px;
   color: gray;
   outline-color: white;
@@ -79,10 +73,25 @@ textarea::placeholder {
   font-family: 'Roboto', sans-serif;
 }
 
+textarea {
+  margin: 15px;
+  color: gray;
+  outline-color: white;
+}
+
 .wrap-bottom {
   display: -ms-flexbox;
   display: flex;
   width: 90%;
+}
+
+.wrap-bottom > p > span {
+  color: gray;
+}
+
+.wrap-bottom > p {
+  padding-left: -150px;
+  padding-top: 8px;
 }
 
 button[type="submit"] {
@@ -94,15 +103,6 @@ button[type="submit"] {
   padding: 15px;
   font-weight: bold;
   margin-top: 30px;
-}
-
-.wrap-bottom > p > span {
-  color: gray;
-}
-
-.wrap-bottom > p {
-  padding-left: -150px;
-  padding-top: 8px;
 }
 
 button:hover {
